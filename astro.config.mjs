@@ -6,7 +6,7 @@ import starlightImageZoom from 'starlight-image-zoom'
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://bth-webtec.github.io/website/',
+	site: 'https://bth-databas.github.io/website/',
 	base: '/website',
 	markdown: {
 		remarkPlugins: [remarkReadingTime],
@@ -16,7 +16,7 @@ export default defineConfig({
 			plugins: [
 				starlightImageZoom(),
 			],
-			title: 'Kursen webtec',
+			title: 'Kursen databas',
 			favicon: 'favicon.png',
 			logo: {
 				//src: './src/assets/leaf_256x256.png',
@@ -26,11 +26,11 @@ export default defineConfig({
 				'./src/styles/dbwebb.css',
 			],
 			editLink: {
-				baseUrl: 'https://github.com/bth-webtec/website/tree/main',
+				baseUrl: 'https://github.com/bth-databas/website/tree/main',
 			},
-			social: {
-				github: 'https://github.com/bth-webtec/website',
-			},
+			social: [
+    			{ icon: 'github', label: 'GitHub', href: 'https://github.com/bth-databas/website' }
+			],
 			head: [
 				{
 				  tag: 'base',
