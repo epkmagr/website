@@ -23,7 +23,7 @@ Här publiceras även större meddelanden rörande kursen.
 
 En stor del av kursmaterialet finns tillgängligt via kurssidan på den öppna webbplatsen för kursen.
 
-* https://webtec-2024.github.io/website/
+* https://bth-databas.github.io/website/
 
 
 
@@ -31,7 +31,7 @@ En stor del av kursmaterialet finns tillgängligt via kurssidan på den öppna w
 
 Kursmaterial och inlämningar sker delvis via Git-repon och GitHub. Kursen har en organisation på GitHub.
 
-* https://github.com/webtec-2024/
+* https://github.com/bth-databas/
 
 
 

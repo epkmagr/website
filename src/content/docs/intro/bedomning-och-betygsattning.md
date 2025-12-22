@@ -45,11 +45,13 @@ Poängfördelningen är uppdelad för projektet 60% och för övriga delar i kur
 
 Följande tabell används vid bedömning av genomförda kursmoment.
 
-| Bedömningspunkt | Poäng | Din poäng |
-|-----------------|:-----:|-----------|
-| Kursmomenten är utförda enligt instruktion och är kompletta. | 30 | |	
-| Kursmomenten är mycket väl utförda och resultatet håller en hög nivå. Denna del används endast om ett betyg står och väger mellan två betyg. | (10) | |	
-| TOTALT | 30&nbsp;(40) | |	
+| Bedömningspunkt | Poäng |
+|-----------------|:-----:|
+| Kursmomenten är utförda enligt instruktion och är kompletta. | 30 |	
+| Kursmomenten är mycket väl utförda och resultatet håller en hög nivå. Denna del används endast om ett betyg står och väger mellan två betyg. | (10) |
+| TOTALT | 30&nbsp;(40) |
+
+För ett godkänt betyg krävs minst 25 poäng.
 
 
 
@@ -57,15 +59,29 @@ Följande tabell används vid bedömning av genomförda kursmoment.
 
 Följande tabell används vid bedömning av projektet.
 
-| Bedömningspunkt | Poäng | Din poäng |
-|-----------------|:-----:|-----------|
-| Krav 1 är implementerat och fungerar felfritt. | 10 | |
-| Krav 2 är implementerat och fungerar felfritt. | 10 | |
-| Krav 3 är implementerat och fungerar felfritt. | 10 | |
-| Krav 4 är implementerat och fungerar felfritt. | 10 | |
-| Krav 5 är implementerat och fungerar felfritt. | 10 | |
-| Krav 6 är implementerat och fungerar felfritt. | 10 | |
-| TOTALT | 60 | |
+| Bedömningspunkt | Poäng |
+|-----------------|:-----:|
+| Krav 1 är implementerat och fungerar felfritt. | 10 |
+| Krav 2 är implementerat och fungerar felfritt. | 10 |
+| Krav 3 är implementerat och fungerar felfritt. | 10 |
+| Krav 4 är implementerat och fungerar felfritt. | 10 |
+| TOTALT | 40 |
+
+För ett godkänt betyg krävs minst 20 poäng.
+
+
+
+### Examination
+
+Följande tabell används vid bedömning av examinationsuppgiften.
+
+| Bedömningspunkt | Poäng |
+|-----------------|:-----:|
+| Krav 1 är implementerat och fungerar felfritt. | 10 |
+| Krav 2 är implementerat och fungerar felfritt. | 10 |
+| TOTALT | 20 |
+
+För ett godkänt betyg krävs minst 10 poäng.
 
 
 
@@ -73,9 +89,9 @@ Följande tabell används vid bedömning av projektet.
 
 Följande tabell visar hur slutbetyget räknas fram baserat på antalet poäng.
 
-| A-F, ECTS | U, G, UX | U, G, VG | U, 3-5 | Definition | Poäng nivå | Ditt betyg |
-|------|-| ----------|--------|------------|------------|:----------:|
-| A | G | VG | 5 | UTMÄRKT – enastående resultat. | 90+ | |
+| A-F, ECTS | U, G, UX | U, G, VG | U, 3-5 | Definition | Poäng nivå |
+|-----------|----------|----------|--------|------------|------------|
+| A | G | VG | 5 | UTMÄRKT – enastående resultat. | 90+ |
 | B | G | VG | 4 | MYCKET BRA – klart över medelstandard. | 80+ | 
 | C | G | G | 4 | BÄTTRE ÄN BRA – allmänt bra arbete. | 70+ | 
 | D | G | G | 3 | BRA – en fullgod prestation. | 60+ | 

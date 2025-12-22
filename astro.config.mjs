@@ -65,23 +65,23 @@ export default defineConfig({
 							autogenerate: { directory: 'laromaterial/kursrepo' },
 							collapsed: true,
 						},
-						{ 
-							label: 'Kursrepo utvecklingsmiljö',
+						/*{ 
+							label: '⚠️ Kursrepo utvecklingsmiljö',
 							autogenerate: { directory: 'laromaterial/kursrepo-utvecklingsmiljo' },
 							collapsed: true,
-						},
+						},*/
 						{ 
 							label: 'Föreläsning',
 							autogenerate: { directory: 'laromaterial/forelasning' },
 							collapsed: true,
 						},
 						{ 
-							label: 'Övning',
+							label: '⚠️ Övning',
 							autogenerate: { directory: 'laromaterial/ovning' },
 							collapsed: true,
 						},
 						{ 
-							label: 'Lab',
+							label: '⚠️ Lab',
 							collapsed: true,
 							items: [
 								'laromaterial/lab',
@@ -93,12 +93,12 @@ export default defineConfig({
 							],
 						},
 						{ 
-							label: 'Uppgift',
+							label: '⚠️ Uppgift',
 							autogenerate: { directory: 'laromaterial/uppgift' },
 							collapsed: true,
 						},
 						{ 
-							label: 'Instruktion',
+							label: '⚠️ Instruktion',
 							autogenerate: { directory: 'laromaterial/instruktion' },
 							collapsed: true,
 						},

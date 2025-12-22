@@ -1,5 +1,5 @@
 ---
-title: "Övrigt" 
+title: "Om övrigt" 
 description: Övriga saker som är relevanta för kursen.
 sidebar:
     order: 0000

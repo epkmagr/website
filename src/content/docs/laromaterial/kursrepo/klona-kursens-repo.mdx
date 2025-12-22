@@ -1,0 +1,30 @@
+---
+title: "⚠️ Klona kursens repo" 
+description: Klona ditt eget kursrepo för kursen.
+author: mos
+revision:
+    "2025-06-24": "(A, mos) Första utkastet."
+sidebar:
+    order: 0020
+---
+
+import Figure from '@components/CustomFigure.astro';
+import YouTube from '@components/YouTube.astro';
+
+När du blev inbjuden till kursens organisation så skapades också ett kursrepo till dig. Kursrepot innehåller en katalogstruktur och delar av en utvecklingsmiljö som hjälper dig igenom kursen och som är viktig för att göra inlämningar.
+
+_Visa hur man klonar repot och gör en första commit till det._
+
+---
+
+```bash title="Klona det befintliga repot och alla dess delar."
+# Clone the existing repo as a mirror
+git clone --mirror git@github.com:bth-webtec/webtec-abcd25.git $REPO
+cd $REPO
+```
+
+```bash title="Koppla det lokala repot till platsen på GitHub."
+# Connect your local repo with the place at GitHub
+git remote set-url origin git@github.com:bth-webtec/$REPO.git
+git push --mirror
+```
