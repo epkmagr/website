@@ -1,51 +1,21 @@
 ---
-title: "⚠️ Kmom03: Struktur och stil" 
-description: Vi bygger en webbplats som får plats på en webbsida, en "One-page" webbplats och samtidigt så tränar vi på fler konstruktioner av HTML och CSS.
+title: "⚠️ Kmom03: XXX"
+description: XXX.
+revision:
+  2026-01-01: (A, mos) Första versionen. 
 ---
 
 import Figure from '@components/CustomFigure.astro';
 import YouTube from '@components/YouTube.astro';
 
-Vi har nu ägnat ett par veckor åt att lära oss grunder i HTML och CSS (och JavaScript) och nu är det dags att utföra ett mindre arbete som visar hur mycket vi lärt oss så här långt.
 
-Vi skall bygga en webbplats som kallas "One-page" webbplats. Det är en webbplats som får plats på en webbsida. Allt innehåll ligger på en och samma sida. Det finns en guide som visar hur du kommer igång med grunderna för en sådan webbplats och uppgiften är att bygga en sådan webbplats till en tänkt (påhittad) kund, företag eller organisation.
 
-Så här kan delen av en webbplats se ut.
+Vi jobbar vidare med SQL och tränar mer på utmanande saker som subqueries, JOIN och LEFT/RIGHT OUTER JOIN.
 
-import done from '@assets/onepage/done.png';
+Vi bygger vidare på terminalskript i CSharp och bygger en menydriven klient som kan utföra olika saker mot databasen.
 
-<Figure 
-    src={done}
-    caption="Så här ser delar av den avslutande webbplatsen ut."
-/>
+Vi övar i hur man modellerar och bygger upp en databas, det som kallas Entity-Relationship modelling, ER-modellering, eller bara databasmodellering. Vi delar in modelleringen i konceptuell, logisk och fysisk modellering. Vi börjar med att fokusera på den konceptuella delen av modelleringen.
 
-import onepage8 from '@assets/onepage/onepage8.png';
-
-<Figure 
-    src={onepage8}
-    caption="Kolumnbaserad layout med wrap."
-/>
-
-{/*
-
-Vilka HTML-delar kan vara av intresse?
-
-* form, formelements
-* table
-* dl, dd, dt
-* summary, details
-* externa fonter
-* bakgrundsbilder, färg
-* ljud, bild
-* position absolute/fixed
-* float
-* inbyggda css-funktioner
-* Kolumner lika höjd (träna flexbox)
-* Ändra små delar av texten, typ stor bokstav inledning av paragraf, första meningen bold...
-
-(cookies, hur använda dem med js?)
-
-*/}
 
 
 ## Läs & Studera
@@ -56,67 +26,48 @@ Här kan du på egen hand studera och förbereda dig inför övningar och uppgif
 
 ### Föreläsning
 
-Det finns inga inspelade föreläsningar till detta kursmomentet.
-
-{/*
 Titta på följande inspelade föreläsningar. Föreläsningarna kan innehålla tips om läsanvisningar.
 
-1. XXX
-*/}
+1. [Modellera databas - faser och steg](./../forelasning/modellera-databas) ger en översikt av modellering av databaser och visar olika faser och steg för att modellera databasen.
+
+1. [ER-modellering - konceptuell modellering](./../forelasning/er-modellering) visar hur man kan rita en ER-modell via olika konstruktioner och introducerar en del begrepp om ER som underlättar ritandet.
 
 
 
-### Litteratur
+### Kurslitteratur
 
-Det finns ingen särskild litteratur eller läsanvisningar till detta kursmomentet.
+Läs följande:
 
+1. [Databasteknik](kunskap/boken-databasteknik) repetera om avancerad SQL.
+    * Kap 8: Mer om SQL: Aggregatfunktioner, null-värden, yttre join
 
+1. [Databasteknik](kunskap/boken-databasteknik) om ER modellering.
+    * Kap 2: ER-modellering
+    * Kap 4: Designprocessen
 
-### Video för orientering
-
-Titta på följande videor/filmer. Filmerna är tänkta att ge dig en allmän orientering i det område som behandlas i kursmomentet.
-
-* Evolution of Web Design 1990-2019 (8 min)
-* Bad Web Design: A Look At The Most Hilariously Terrible Websites From Around The Web (11 min)
-
-Videorna ovan finner du även i spellistan "[Om webbteknologier (HTML, CSS, JavaScript)](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8ODK-01sIVTEfrtxPO05GD)".
-
-
-För JavaScript den här veckan kikar du på de videor som berör:
-
-* forloop
-* while
-* Smygkika på funktioner
-
-Videorna ovan finner du i spellistan ["Kom igång med js - webtec 2025"](https://www.youtube.com/watch?v=ZfK9H6555xo&list=PLKtP9l5q3ce-IVBzwNsm32_cxxscvpc-W).
+1. [Boken har även en webbplats](http://www.databasteknik.se/webbkursen/) och vissa utdrag från boken finns där. Relevant för detta kmom är följande:
+    * [ER-modellering i webbkursen](http://www.databasteknik.se/webbkursen/er/)
 
 
 
-### Instuderingsfrågor
+### Artiklar
+
+Kika igenom följande artiklar.
+
+1. Läs igenom igenom artikeln "[Kokbok för databasmodellering](kunskap/kokbok-for-databasmodellering)", den ger dig en metod för att modellera databaser i olika faser. Du kommer jobba enligt denna modellen i uppgiften. I detta kmom läser du först och främst delen om "Konceptuell modellering".
+
+
+
+### Ai som lärare (instuderingsfrågor)
 
 Här finns ett antal instuderingsfrågor som hjälper dig att finna information på egen hand för att träna på de koncept som är relevanta för detta kmom.
 
 <details>
-<summary>Instuderingsfrågor om HTML/CSS</summary>
+<summary>Instuderingsfrågor</summary>
 
-1. Finns det ett koncept som heter "One-page" webbplats?
-1. Vad skall man tänka på när man bygger en sådan webbplats?
-1. Kan man göra en grundstruktur för sidan med HTML där man delar in sidan i rader och varje rad har kolumner med innehåll?
+1. 
 
-[Här är ett exempel på en session från en Ai-kompis](https://chatgpt.com/share/68c427e6-ff74-8005-811c-b7fff295da80).
-
-</details>
-
-<details>
-<summary>Instuderingsfrågor om JavaScript</summary>
-
-1. Hur fungerar en forloop i JavaScript?
-
-1. Hur fungerar en whileloop i JavaScript?
-
-1. Hur fungerar funktioner i JavaScript?
-
-Tänk på att vi namnger inte funktioner med svenska namn, framförallt inte ÅÄÖ.
+Här är en [utskrift av när en frågesession genomförts](https://chatgpt.com/share/68bafa23-4b84-8005-a745-451d43258c9a). Dina svar kan skifta från de som visas. Var alltid kritisk till dina källor.
 
 </details>
 
@@ -124,7 +75,7 @@ Tänk på att vi namnger inte funktioner med svenska namn, framförallt inte Å�
 
 ## Övningar & Uppgifter
 
-Övningar är träning inför uppgifterna, det är ofta klokt att jobba igenom övningarna då de förbereder dig inför uppgifterna. Uppgifter skall utföras och redovisas.
+Övningar är träning inför uppgifterna. Uppgifter skall utföras och redovisas.
 
 
 
@@ -132,9 +83,13 @@ Tänk på att vi namnger inte funktioner med svenska namn, framförallt inte Å�
 
 Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
-1. Jobba igenom övningen "[Bygg grunden för en One-page webbplats](/website/laromaterial/ovning/bygg-en-one-page-webbplats)".
+1. Jobba igenom artikeln "[Gör en kommandoradsklient i Node.js (v2)](kunskap/gor-en-kommandoradsklient-i-node-js-v2)". Spara alla filer du gör i `me/kmom03/cli`.
 
-1. Gå igenom artikeln om [de vanligaste konstruktionerna del 2](/website/laromaterial/ovning/kom-igang-med-javascript/common-structures-2) i JavaScript.
+{/*
+Modelleringsövningsuppgifter
+https://docs.google.com/document/d/1kKoSO2BQL5T2cnzshpM_hnk5JbqT0_00khfGJKZQ2Fo/edit
+
+Gjort modelleringsövning i sal med draw.io: https://goo.gl/vNRvKt */}
 
 
 
@@ -142,9 +97,12 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
 Följande uppgifter skall utföras och resultatet skall redovisas.
 
-1. Utför laborationen "[Lab 3: JavaScript med mer kontrollstrukturer](/website/laromaterial/lab/lab_03/readme/)".
+1. Gör uppgiften "[Node.js terminalprogram mot MySQL med kommandoloop](uppgift/nodejs-terminalprogram-mot-mysql-med-kommandoloop)". Spara alla filer i `me/kmom03/terminal2`.
 
-1. Gör uppgiften "[Bygg en One-page webbplats](/website/laromaterial/uppgift/kmom03-one-page-website/)".
+1. Fortsätt jobba igenom nästa del av guiden "[Kom igång med SQL i MySQL](guide/kom-igang-med-sql-i-mysql-v2)". Spara filerna i katalogen `me/skolan` som din redovisning. Detta är sista delen av guiden som vi kommer jobba med.
+    * [Delen: Koppla tabeller](guide/kom-igang-med-sql-i-mysql-v2/koppla-tabeller)
+
+1. Gör uppgiften "[Skapa ER-modell för en databas (konceptuell)](uppgift/skapa-er-modell-for-en-databas-konceptuell)". Visa att du kan jobba enligt en metod för att skapa en databasmodell och redovisa i ett dokument. Detta är första delen av uppgiften som slutförs i kommande kursmoment. Spara allt du gör i `me/kmom03/er1`.
 
 
 
@@ -154,12 +112,10 @@ Läs [instruktionen om hur du skall redovisa](/website/laromaterial/instruktion/
 
 Se till att följande frågor besvaras i din redovisningstext i din rapportsida.
 
-* Berätta om temat för din One-page webbplats, vilket är det och vad handlar det om samt hur du tänkte när du valde färgpaletten.
-
-* Hur hittade du resurser likt bilder, text och inspiration till din webbplats?
-
-* Fanns det några hinder eller utmaningar när du byggde din webbplats?
-
-* Har du några råd till den som är nybörjare på CSS, vad skall man börja med?
+* Några generella reflektioner på att skriva och jobba med menydrivna terminalprogram i JavaScript och Node.js?
+* Berätta om din kodstruktur i ditt terminalprogram mot databasen, är du nöjd eller ser du förbättringspotential?
+* Något att nämna kring det aktuella stycket i guiden skolan med till exempel outer joins och subqueries?
+* Hur gick det att jobba med ER-modelleringen, några reflektioner?
+* Fanns det några extra svårigheter/utmaningar du kämpade med i kursmomentet?
 
 * Vilken är din TIL för detta kmom?

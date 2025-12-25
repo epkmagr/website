@@ -1,26 +1,16 @@
 ---
-title: "⚠️ Kmom01: Kom igång med databas och SQL" 
-description: Kursmoment 01 för att komma igång med grunderna i HTML, CSS (och JavaScript).
+title: "⚠️ Kmom01: Databas och SQL" 
+description: Använd en befintlig databas och kom igång med grunderna i SQL.
 revision:
-  2025-08-13: (A, mos) Första versionen. 
+  2026-01-01: (A, mos) Första versionen. 
 ---
 
 import Figure from '@components/CustomFigure.astro';
 import YouTube from '@components/YouTube.astro';
 
-import done from '@assets/sewmhcoj/done.png';
+Vi börjar med att installera en labbmiljö som består av en databas och ett par databas-klienter. Vi skall jobba med databasen MySQL/MariaDB som är en relationsdatabas. Som klienter använder vi en terminalbaserad klient och en fönsterbaserad grafisk klient. Klienterna har båda sin plats i vår verktygslåda och de är bra att använda vid olika typer av tillfällen.
 
-<Figure 
-    src={done}
-    caption="Så här kan ett resultat se ut när du jobbar i detta kmom."
-/>
-
-
-Vi börjar med att bygga en enkel webbplats med grunderna i HTML, CSS och JavaScript. Vi skapar en god struktur och uppdelning av filer och kataloger som förbereder oss för större projekt. Vi lär oss grundeläggande begrepp som används när man bygger en webbplats.
-
-Vi tar hjälp av validatorer för att kontrollera att vi skriver koden på ett korrekt sätt.
-
-Samtidigt som vi bygger webbplatsen bekantar vi oss med en resurser som är bra för att lära sig mer om de tekniker vi använder.
+I en relationsdatabas pratar vi SQL med databasen. Vi skriver SQL för att skapa tabeller och för att lägga till, uppdatera, visa och radera data från databasen. När databasen är på plats så kikar vi på en del grundkonstruktioner för SQL.
 
 
 
@@ -34,43 +24,53 @@ Här kan du på egen hand studera och förbereda dig inför övningar och uppgif
 
 Titta på följande inspelade föreläsningar. Föreläsningarna kan innehålla tips om läsanvisningar.
 
-1. [Introduktion till Webbteknologier](/website/laromaterial/forelasning/introduktion-till-webbteknologier)
-1. [Introduktion till HTML](/website/laromaterial/forelasning/introduktion-till-html)
-
 {/*
-1. JavaScript
+1. [Kursintro](./../forelasning/kursintro) som ger en introduktion till kursens struktur och upplägg samt en översikt av kursens innehåll.
 */}
 
+1. [Databaser och relationsdatabaser, introduktion](./../forelasning/databas-relationsdatabas-introduktion) ger dig en introduktion till begrepp som databas och relationsdatabas.
 
-
-### Litteratur
-
-Studera litteratur och resurser enligt följande.
-
-1. Kika snabbt igenom de resurser som finns om [HTML HyperText Markup Language på webbplatsen MDN](https://developer.mozilla.org/en-US/docs/Web/HTML).
-
-1. Kika snabbt igenom de resurser som finns om [CSS Cascading Style Sheets på webbplatsen MDN](https://developer.mozilla.org/en-US/docs/Web/CSS).
-
-1. Kika snabbt igenom de resurser som finns om [JavaScript på webbplatsen MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
-
-Ovan webbsidor är vår referensmanual när det gäller dessa tekniker. Försök gärna landa på någon av dessa webbplatser när du googlar efter information. Börja din googling med "mdn" eller inkludera tekniken "mdn html" och därefter lägger du til det du söker på.
-
-Vill du ha enklare material att komma igång med så finns det tutorials på W3Schools.
-
-* [W3Schools HTML Tutorial](https://www.w3schools.com/html/)
-* [W3Schools CSS Tutorial](https://www.w3schools.com/css/)
-* [W3Schools JavaScript Tutorial](https://www.w3schools.com/js/)
+1. [SQL introduktion och exempel](./../forelasning/sql-introduktion-och-exempel) ger dig en introduktion till frågespråket SQL.
 
 
 
-### Video för orientering
+### Kurslitteratur
 
-Titta på följande videor/filmer. Filmerna är tänkta att ge dig en allmän orientering i det område som behandlas i kursmomentet.
+Läs följande:
 
-* Vad är webben (14 min)
-* A brief history of the World Wide Web (3 min)
+1. [Databasteknik](kunskap/boken-databasteknik) om MySQL.
+    * Kap 1: Databaser och databashanterare
+    * Kap 7: Introduktion till frågespråket SQL
+    * Kap 29: Introduktion till MySQL (om du har tid och lust)
 
-Videorna ovan finner du även i spellistan "[Om webbteknologier (HTML, CSS, JavaScript)](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8ODK-01sIVTEfrtxPO05GD)".
+2. [Boken har även en webbplats](http://www.databasteknik.se/webbkursen/) och vissa utdrag från boken finns där. Relevant för detta kmom är följande:
+
+    * [Introduktion till databaser och databashanterare](http://www.databasteknik.se/webbkursen/databaser/index.html)
+    * [Introduktion till frågespråket SQL](http://www.databasteknik.se/webbkursen/sql/index.html)
+    * [Introduktion till MySQL](http://www.databasteknik.se/webbkursen/mysql/index.html) (om du har tid och lust)
+
+
+
+### Artiklar
+
+Kika igenom följande artiklar.
+
+1. Kika igenom referensmanualen för MariaDB, kort och översiktligt så att du kan navigera i den. Referensmanualen är ett viktigt verktyg för att bli bra på databaser och SQL. Se till att du kan hitta till den delen som visar hur SQL med SELECT skall skrivas i MySQL.
+    * [MariaDB Server Documentation](https://mariadb.com/kb/en/documentation/)
+
+1. Under kursen kommer vi att ponera vikten av att hålla sig till en kodstil för SQL-koden. Det kommer inte vara absolut strikt, men det är en rimlig rekommendation att följa en kodstil. För kursen har vi valt "[SQL Style Guide by Simon Holywell](https://www.sqlstyle.guide/)". Ha detta i bakhuvudet när du funderar på hur man skriver sin SQL-kod. Om du har funderingar kring kodstilen så kan du läsa "[SQL style guide misconceptions](https://www.simonholywell.com/post/2016/12/sql-style-guide-misconceptions/)".
+
+
+
+{/*
+### Video 
+
+Kika igenom följande videor för att få grepp om grunderna i Databaser och SQL. Ibland kan man hitta bra resurser på nätet och detta är ett litet försök att visa upp det.
+
+1. För att få en snabb översikt om databaser och SQL så kikar du igenom videon "[What is Database & SQL?](https://www.youtube.com/watch?v=FR4QIeZaPeM)". Videon ger dig en snabb översikt av termer med förklaringar.
+
+1. Videon "[Learn Basic SQL in 10 Minutes](https://www.youtube.com/watch?v=bEtnYWuo2Bw)" ger dig en snabb förklaring till grunderna i SQL. Videon hanterar även översikt av mer avancerade begrepp som JOIN, UNION och GROUP. Dessa kommer senare i kursen.
+*/}
 
 
 
@@ -79,47 +79,13 @@ Videorna ovan finner du även i spellistan "[Om webbteknologier (HTML, CSS, Java
 Här finns ett antal instuderingsfrågor som hjälper dig att finna information på egen hand via din Ai-kompis, för att på egen hand träna på de koncept som är relevanta för detta kmom.
 
 <details>
-<summary>Instuderingsfrågor om HTML</summary>
+<summary>Instuderingsfrågor</summary>
 
-1. Vad står HTML för?
-1. Ge mig en kort historik över hur HTML har vuxit fram.
-1. Vilken är ställningen och status för HTML idag?
-1. Var är den eller de viktiga källorna för referensinformation om HTML?
-1. Vilka är de allra vanligaste HTML elementen som man bör lära sig?
-1. Kan du visa grundstrukturen för en HTML-sida?
+1. 
 
 Här är en [summering av hur en sådan dialog kan se ut](https://chatgpt.com/share/689caa6e-00ec-8005-b4b0-3542b28ec65e), sen är det bara att fylla på med egna funderingar.
 
 </details>
-
-<details>
-<summary>Instuderingsfrågor om CSS</summary>
-
-1. Vad står CSS för?
-1. Ge mig en kort historik över hur CSS har vuxit fram.
-1. Vilken är ställningen och status för CSS idag?
-1. Var är den eller de viktiga källorna för referensinformation om CSS?
-1. Vilka är de allra vanligaste CSS-konstruktioner som man bör lära sig?
-1. Vill du göra en kommenterad enkel stylesheet för att visa hur det kan se ut?
-
-Här är en [summering av hur en sådan dialog kan se ut](https://chatgpt.com/share/689cabe1-7ef4-8005-848c-78b5c78c4ad6), glöm inte att fylla på med egna följdfrågor.
-
-</details>
-
-<details>
-<summary>Instuderingsfrågor om JavaScript</summary>
-
-1. Ge en kort historik över programmeringsspråket JavaScript.
-1. Vilken är ställningen och status för JavaScript idag?
-1. Var är den eller de viktiga källorna för referensinformation om JavaScript?
-1. Vilka är de grundläggande konstruktionerna man behöver lära sig om man vill bli duktig på javascript?
-1. Vill du visa ett enkelt programexempel i javascript, på säg 20 rader?
-
-Här är en [summering av hur en sådan dialog kan se ut](https://chatgpt.com/share/689d889d-d398-8005-96b7-130a0ef53418).
-
-</details>
-
-Skapa en ny session med din Ai-lärare för varje teknik och fyll sedan på med egna frågor för en fortsatt dialog.
 
 Glöm inte att vara kritisk till informationen du får, precis som man vanligen är mot alla olika källor av information. Svaren kan skifta beroende av vilken Ai-kompis du väljer.
 
@@ -127,7 +93,7 @@ Glöm inte att vara kritisk till informationen du får, precis som man vanligen 
 
 ## Övningar & Uppgifter
 
-Övningar är träning inför uppgifterna, det är ofta klokt att jobba igenom övningarna då de förbereder dig inför uppgifterna. Uppgifter skall utföras och redovisas.
+Övningar är träning inför uppgifterna. Uppgifter skall utföras och redovisas.
 
 
 
@@ -135,23 +101,17 @@ Glöm inte att vara kritisk till informationen du får, precis som man vanligen 
 
 Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
-1. Jobba igenom övningen "[Skapa en webbsida med HTML, CSS och JavaScript](/website/laromaterial/ovning/skapa-en-webbsida-med-html-css-och-javascript)" som hjälper dig att komma igång och stegvis bygga en webbplats med HTML, CSS och JavaScript.
-
-1. Gå igenom artikeln om [inbyggda typer](/website/laromaterial/ovning/kom-igang-med-javascript/builtin-types) i JavaScript.
-
-{/*
- 1. Gå igenom artikeln om [de vanligaste konstruktionerna del 1](/website/laromaterial/ovning/kom-igang-med-javascript/common-structures-1) i JavaScript.
-*/}
-
 
 
 ### Uppgifter
 
-Följande uppgifter skall utföras och resultatet skall redovisas.
+Dessa uppgifter skall utföras och redovisas.
 
-1. Utför laborationen "[Lab 1: Grunderna i JavaScript](/website/laromaterial/lab/lab_01/readme/)".
+1. Gör uppgiften "[Skapa en me-sida för redovisning i dbwebb-kurs](uppgift/skapa-en-me-sida-for-redovisning-i-dbwebb-kurs)". Spara resultatet i `me/redovisa`.
 
-1. Gör uppgiften "[Bygg webbsidor med HTML, CSS och JavaScript](/website/laromaterial/uppgift/kmom01-webbplats/)".
+1. Jobba igenom första delarna av guiden "[Kom igång med SQL i MySQL](guide/kom-igang-med-sql-i-mysql-v2)". I guiden ombeds du göra övningar och spara din SQL-kod i filer. Lägg dem i katalogen `me/skolan` som din redovisning. I nästa kmom fortsätter du med nästa del i guiden.
+    * [Delen: Installation](guide/kom-igang-med-sql-i-mysql-v2/installation)
+    * [Delen: Bygg en databas](guide/kom-igang-med-sql-i-mysql-v2/bygg-en-databas)
 
 
 
@@ -161,12 +121,10 @@ Läs [instruktionen om hur du skall redovisa](/website/laromaterial/instruktion/
 
 Se till att följande frågor besvaras i din redovisningstext i din rapportsida.
 
-* Berätta hur din utvecklingsmiljö ser ut (när du jobbar med kursen) och om du anpassat den på något särskilt sätt?
-* Gick det bra att installera kursens utvecklingsmiljö eller var det något som krånglade?
-* Är du bekant med terminalen och Unix-kommandon sedan tidigare?
-* Är du bekant med HTML, CSS och JavaScript sedan tidigare eller har du jobbat med liknande tekniker?
-* Gick det bra att komma i gång med kursmomentet rent allmänt eller var det något som var lurigt, svårt eller utmanande?
+* Hur känns det att komma igång med databaser, klienter och SQL - är det något du ser fram emot eller fasar inför?
+* Har du jobbat med databaser eller liknande tekniker tidigare?
+* Berätta lite om ditt arbetet med SQL i guiden, hur gick det?
+* Jämför SQL med andra sätt att programmera, relatera till några av de programmeringsspråk du kan.
 * Vilken är din TIL för detta kmom?
 
 TIL är en akronym för "Today I Learned" vilket leksamt anspelar på att det finns alltid nya saker att lära sig, varje dag. Man brukar lyfta upp saker man lärt sig och där man kanske hajade till lite extra över dess nyttighet eller enkelhet, eller så var det bara en ny lärdom för dagen som man vill notera.
-
