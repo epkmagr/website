@@ -1,0 +1,31 @@
+---
+export interface Props {
+  isbn: string
+}
+const { isbn } = Astro.props;
+
+const links = [
+  ["BTH", `https://bth.summon.serialssolutions.com/?#!/search?ho=t&q=${isbn}`],
+  ["Libris", `https://libris.kb.se/hitlist?q=${isbn}`],
+  ["Bokus", `https://www.bokus.com/bok/${isbn}`],
+  ["Adlibris", `https://www.adlibris.com/se/product.aspx?isbn=${isbn}`],
+  ["Amazon", `https://www.amazon.com/s/ref=nb_ss?url=field-keywords=${isbn}`],
+  ["Barnes&Noble", `https://search.barnesandnoble.com/booksearch/ISBNInquiry.asp?r=1&IF=N&EAN=${isbn}`],
+];
+---
+
+<p>
+  {links.map(([label, url], i) => (
+    <>
+      <a href={url}>{label}</a>
+      {i < links.length - 1 && " • "}
+    </>
+  ))}
+</p>
+
+
+<script>
+</script>
+
+<style>
+</style>
