@@ -1,5 +1,5 @@
 ---
-title: "⚠️ Kmom02: XXX"
+title: "⚠️ Kmom02: SQL JOIN"
 description: XXX.
 revision:
   2026-01-01: (A, mos) Första versionen. 
@@ -8,19 +8,25 @@ revision:
 import Figure from '@components/CustomFigure.astro';
 import YouTube from '@components/YouTube.astro';
 
+{/* TODO
+*
+*
 
+TILL KOMMANDE KMOM:
 
-Vi jobbar vidare med SQL och tränar på fler konstruktionerna och ett par utmanande konstruktioner som vyer, subqueries, UNION och JOIN.
+* Serietabeller
+* Användare inloggning, koppling avatar till user
+* Account och flytta mellan konton med transaktioner
+* Order, lagerhantering, fakturering
+*/}
 
-Du får även skapa ett applikationsprogram i terminalen med CSharp som kopplar sig mot databasen och presenterar resultat från databasfrågor.
+:::danger
+Kursmomentet är ännu ej redigerat, informationen är inte korrekt.
+:::
 
+Vi jobbar vidare med SQL och tränar på fler konstruktionerna såsom vyer, UNION och JOIN.
 
-
-## Labbmiljö
-
-Installera följande.
-
-1. Programmeringsmiljön för CSharp.
+Vi börjar titta på hur man modellerar databaser med ER-diagram.
 
 
 
@@ -34,7 +40,7 @@ Här kan du på egen hand studera och förbereda dig inför övningar och uppgif
 
 Titta på följande inspelade föreläsningar. Föreläsningarna kan innehålla tips om läsanvisningar.
 
-1. CSharp och databaser.
+1. [SQL introduktion och exempel](/website/laromaterial/forelasning/sql-introduktion-och-exempel/) ger dig en introduktion till frågespråket SQL.
 
 
 
@@ -42,7 +48,13 @@ Titta på följande inspelade föreläsningar. Föreläsningarna kan innehålla 
 
 Läs följande:
 
-1. XXX
+1. [Databasteknik](kunskap/boken-databasteknik) om mer SQL.
+    * Kap 8: Mer om SQL: Aggregatfunktioner, null-värden, yttre join (hoppa över  delen om yttre join)
+
+Det finns ytterligare ett kapitel i boken som är relaterat till bakgrunden av SQL, det går utanför kursens ram men läs vid intresse.
+
+1. [Databasteknik](kunskap/boken-databasteknik)
+    * Kap 11: Relationsalgebra
 
 
 
@@ -50,15 +62,7 @@ Läs följande:
 
 Kika igenom följande artiklar.
 
-1. [Databasteknik](kunskap/boken-databasteknik) om mer SQL.
-    * Kap 8: Mer om SQL: Aggregatfunktioner, null-värden, yttre join
-    * Kap 21: SQL inuti ett program
-
-Det finns ytterligare ett kapitel i boken som är relaterat till bakgrunden av SQL, det går utanför kursens ram men läs vid intresse.
-
-1. [Databasteknik](kunskap/boken-databasteknik)
-    * Kap 11: Relationsalgebra
-
+1. XXX
 
 
 ### Ai som lärare (instuderingsfrågor)
@@ -86,7 +90,19 @@ Här är en [utskrift av när en frågesession genomförts](https://chatgpt.com/
 
 Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
-1. CSharp och MariaDB.
+1. ⚠️ CSharp och MariaDB.
+
+{/*
+1. Verktyg för att modellera?
+
+Skapa en egen databas och lek runt
+-------------------------
+
+Vi leker runt och gör CREATE DATABASE/TABLE, SELECT, INSERT, UPDATE, DELETE, DROP.
+
+* [Get going with a database and SQL](https://gitlab.com/mikael-roos/database/-/tree/main/sql/ladok)
+
+*/}
 
 
 
@@ -94,10 +110,7 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
 Följande uppgifter skall utföras och resultatet skall redovisas.
 
-1. Lös uppgiften "[Node.js terminalprogram mot MySQL (v2)](uppgift/nodejs-terminalprogram-mot-mysql-v2)". Spara alla filer i `me/kmom02/terminal1`.
-
-1. Fortsätt jobba igenom nästa del av guiden "[Kom igång med SQL i MySQL](guide/kom-igang-med-sql-i-mysql-v2)". Spara filerna i katalogen `me/skolan` som din redovisning. I nästa kmom fortsätter du med nästa del i guiden.
-    * [Delen: Mer SQL](guide/kom-igang-med-sql-i-mysql-v2/mer-sql)
+1. ⚠️ Uppgift med CSharp och MariaDB, menydrivet terminalprogram.
 
 
 
@@ -113,3 +126,43 @@ Se till att följande frågor besvaras i din redovisningstext i din rapportsida.
 * Hur gick det att koppla ihop JavaScript, Node.js med SQL och databasen?
 
 * Vilken är din TIL för detta kmom?
+
+
+
+## Kommentarer & Noteringar
+
+<details>
+<summary>Plan för veckans genomgångar</summary>
+
+Följande är en plan för hur lärarteamet _kan_ lägga upp genomgångarna under veckan för detta kursmoment.
+
+
+
+### Måndag
+
+Första timmen:
+
+* Vi fortsätter jobba med databasen "world" och gör en tripple join samt ett antal rapporter.
+* [World database and SQL: Get going](https://gitlab.com/mikael-roos/database/-/tree/main/sql/world/get-going) (jobba igenom sista delen).
+
+Andra timmen:
+
+* [World database and SQL: Aggregate and builtin functions](https://gitlab.com/mikael-roos/database/-/tree/main/sql/world/aggregate)
+
+
+
+# Onsdag
+
+* Introduktion till ER-modellering
+* Verktyg för modellering: dbdiagram.io + artikel
+* Modellering av databas XXX för träning
+
+
+
+# Torsdag
+
+* Övning "tripple join" med databasen World klar
+* Övning "aggregate & builtin functions" med databasen World klar
+* Andra uppgiften med databasen world påbörjad
+
+</details>

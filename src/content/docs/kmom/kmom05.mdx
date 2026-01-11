@@ -1,5 +1,5 @@
 ---
-title: "⚠️ Kmom05: XXX"
+title: "⚠️ Kmom05:  ER modellering (fysisk) + Procedurer"
 description: XXX.
 revision:
   2026-01-01: (A, mos) Första versionen. 
@@ -8,9 +8,21 @@ revision:
 import Figure from '@components/CustomFigure.astro';
 import YouTube from '@components/YouTube.astro';
 
+{/* TODO
+* inbyggda integritetsregler?
+* Kan tid flyttas till ett kmom tidigare?
+*/}
 
+:::danger
+Kursmomentet är ännu ej redigerat, informationen är inte korrekt.
+:::
 
-XXX
+Vi sluför ER-modellen med fokus på fysisk modellering. Vi skapar SQL-kod som kan skapa databasens schema.
+
+Vi tittar på hur man kan programmera i en databas med lagrade procedurer. Dessa konstruktioner ger oss ökade möjligheter att formulera vår SQL-kod i mer avancerade programmeringskonstruktioner.
+
+Det ger oss också möjligheten till inkapsling av SQL-koden och publicera ett API som kan användas av de klienter som vill åt databasen. Detta gör att databaskoden och dess interna representation kan skyddas från klienterna som enbart jobbar mot databasen via ett API bestående av lagrade procedurer.
+
 
 
 
@@ -24,7 +36,9 @@ Här kan du på egen hand studera och förbereda dig inför övningar och uppgif
 
 Titta på följande inspelade föreläsningar. Föreläsningarna kan innehålla tips om läsanvisningar.
 
-1. XXX
+1. [Tidstämplar i databastabell](/website/laromaterial/forelasning/tidstamplar) visar hur tidstämplar kan fungera i en databastabell och hur de kan få sitt värde per automatik.
+
+1. [Lagrade procedurer och programmera i databasen](/website/laromaterial/forelasning/lagrade-procedurer) introducerar framförallt hur man jobbar med lagrade procedurer i databasen för att kombinera variabel, SQL och mer sedvanliga programmeringskonstruktioner.
 
 
 
@@ -32,7 +46,13 @@ Titta på följande inspelade föreläsningar. Föreläsningarna kan innehålla 
 
 Läs följande:
 
-1. XXX
+1. Databasteknik
+    * Kap 13. Integritetsvillkor
+    * Kap 15: Lagrade procedurer
+    * Kap 20: Tid i databaser
+
+1. [Boken har även en webbplats](http://www.databasteknik.se/webbkursen/) och vissa utdrag från boken finns där. Relevant för detta kmom är följande:
+    * [Integritetsvillkor](http://www.databasteknik.se/webbkursen/integritet/index.html)
 
 
 
@@ -40,7 +60,12 @@ Läs följande:
 
 Kika igenom följande artiklar.
 
-1. XXX
+1. I manualen för MariaDB kan du läsa om lagrade procedurer (stored procedures) och triggers, det är främst följande kapitel som är relevanta, bekanta dig med dem, du kommer att träna på begreppen i kommande övningar.
+    * [Stored Procedures](https://mariadb.com/kb/en/stored-procedures/)
+    * [Stored Procedure Overview](https://mariadb.com/kb/en/stored-procedure-overview/)
+    * [TIMESTAMP](https://mariadb.com/kb/en/timestamp/)
+
+1. Fortsätt jobba igenom artikeln "[Kokbok för databasmodellering](https://dbwebb.se/kunskap/kokbok-for-databasmodellering)", den ger dig processen du skall följa. I detta kmom handlar det främst om att fokusera på fysisk modellering.
 
 
 
@@ -69,7 +94,7 @@ Här är en [utskrift av när en frågesession genomförts](https://chatgpt.com/
 
 Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
-1. XXX
+1. ⚠️ Jobba igenom "[Lagrade procedurer i databas](kunskap/lagrade-procedurer-i-databas)" för att lära dig om lagrade procedurer och vad du kan göra med dem.
 
 
 
@@ -77,7 +102,9 @@ Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
 Följande uppgifter skall utföras och resultatet skall redovisas.
 
-1. XXX
+1. ⚠️ Uppgift med lagrade procedurer.
+
+1. ⚠️ Uppgift med ER-modellering (fysisk).
 
 
 
@@ -87,6 +114,43 @@ Läs [instruktionen om hur du skall redovisa](/website/laromaterial/instruktion/
 
 Se till att följande frågor besvaras i din redovisningstext i din rapportsida.
 
-* 
+* Hur gick det att komma igång med lagrade procedurer?
+* Hur är din syn på att "programmera" på detta viset i databasen, jämför med traditionell SQL som exponeras i klienten?
+* Skriv ett kort stycke (2-5 meningar) om lagrade procedurer där du förklarar begreppen (fördel, nackdel, användningsområde) för en som inte är insatt.
+
 
 * Vilken är din TIL för detta kmom?
+
+
+
+## Kommentarer & Noteringar
+
+<details>
+<summary>Plan för veckans genomgångar</summary>
+
+Följande är en plan för hur lärarteamet _kan_ lägga upp genomgångarna under veckan för detta kursmoment.
+
+
+
+### Måndag
+
+Första timmen:
+
+* Övning med lagrade procedurer
+
+Andra timmen:
+
+* Uppgift där man bygger terminalprogram som använder lagrade procedurer.
+
+
+# Onsdag
+
+* 
+
+
+
+# Torsdag
+
+* 
+
+</details>

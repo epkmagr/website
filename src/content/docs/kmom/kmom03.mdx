@@ -1,5 +1,5 @@
 ---
-title: "⚠️ Kmom03: XXX"
+title: "⚠️ Kmom03: ER modellering (konceptuell) + CSharp"
 description: XXX.
 revision:
   2026-01-01: (A, mos) Första versionen. 
@@ -8,13 +8,27 @@ revision:
 import Figure from '@components/CustomFigure.astro';
 import YouTube from '@components/YouTube.astro';
 
+{/* TODO
+* 
+*/}
 
+:::danger
+Kursmomentet är ännu ej redigerat, informationen är inte korrekt.
+:::
 
 Vi jobbar vidare med SQL och tränar mer på utmanande saker som subqueries, JOIN och LEFT/RIGHT OUTER JOIN.
 
-Vi bygger vidare på terminalskript i CSharp och bygger en menydriven klient som kan utföra olika saker mot databasen.
+Du får även skapa ett applikationsprogram i terminalen med CSharp som kopplar sig mot databasen och presenterar resultat från databasfrågor.
 
 Vi övar i hur man modellerar och bygger upp en databas, det som kallas Entity-Relationship modelling, ER-modellering, eller bara databasmodellering. Vi delar in modelleringen i konceptuell, logisk och fysisk modellering. Vi börjar med att fokusera på den konceptuella delen av modelleringen.
+
+
+
+## Labbmiljö
+
+Installera följande.
+
+1. Programmeringsmiljön för CSharp.
 
 
 
@@ -28,9 +42,11 @@ Här kan du på egen hand studera och förbereda dig inför övningar och uppgif
 
 Titta på följande inspelade föreläsningar. Föreläsningarna kan innehålla tips om läsanvisningar.
 
-1. [Modellera databas - faser och steg](./../forelasning/modellera-databas) ger en översikt av modellering av databaser och visar olika faser och steg för att modellera databasen.
+{/* 1. CSharp och databaser. */}
 
-1. [ER-modellering - konceptuell modellering](./../forelasning/er-modellering) visar hur man kan rita en ER-modell via olika konstruktioner och introducerar en del begrepp om ER som underlättar ritandet.
+1. [Modellera databas - faser och steg](/website/laromaterial/forelasning/modellera-databas-faser-och-steg/) ger en översikt av modellering av databaser och visar olika faser och steg för att modellera databasen.
+
+1. [ER-modellering - konceptuell modellering](/website/laromaterial/forelasning/er-modellering-konceptuell/) visar hur man kan rita en ER-modell via olika konstruktioner och introducerar en del begrepp om ER som underlättar ritandet.
 
 
 
@@ -38,10 +54,11 @@ Titta på följande inspelade föreläsningar. Föreläsningarna kan innehålla 
 
 Läs följande:
 
-1. [Databasteknik](kunskap/boken-databasteknik) repetera om avancerad SQL.
-    * Kap 8: Mer om SQL: Aggregatfunktioner, null-värden, yttre join
+1. Databasteknik - om avancerad SQL.
+    * Kap 8: Mer om SQL: Aggregatfunktioner, null-värden, yttre join (främst delen med yttre join)
+    * Kap 21: SQL inuti ett program
 
-1. [Databasteknik](kunskap/boken-databasteknik) om ER modellering.
+1. Databasteknik - om ER modellering.
     * Kap 2: ER-modellering
     * Kap 4: Designprocessen
 
@@ -54,7 +71,7 @@ Läs följande:
 
 Kika igenom följande artiklar.
 
-1. Läs igenom igenom artikeln "[Kokbok för databasmodellering](kunskap/kokbok-for-databasmodellering)", den ger dig en metod för att modellera databaser i olika faser. Du kommer jobba enligt denna modellen i uppgiften. I detta kmom läser du först och främst delen om "Konceptuell modellering".
+1. Läs igenom igenom artikeln "[Kokbok för databasmodellering](https://dbwebb.se/kunskap/kokbok-for-databasmodellering)", den ger dig en metod för att modellera databaser i olika faser. Du kommer jobba enligt denna modellen i uppgiften. I detta kmom läser du först och främst delen om "Konceptuell modellering".
 
 
 
@@ -83,9 +100,12 @@ Här är en [utskrift av när en frågesession genomförts](https://chatgpt.com/
 
 Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
-1. Jobba igenom artikeln "[Gör en kommandoradsklient i Node.js (v2)](kunskap/gor-en-kommandoradsklient-i-node-js-v2)". Spara alla filer du gör i `me/kmom03/cli`.
+1. ⚠️ Övning med classic models.
 
 {/*
+1. Jobba igenom artikeln "[Gör en kommandoradsklient i Node.js (v2)](kunskap/gor-en-kommandoradsklient-i-node-js-v2)". Spara alla filer du gör i `me/kmom03/cli`.
+
+
 Modelleringsövningsuppgifter
 https://docs.google.com/document/d/1kKoSO2BQL5T2cnzshpM_hnk5JbqT0_00khfGJKZQ2Fo/edit
 
@@ -97,12 +117,9 @@ Gjort modelleringsövning i sal med draw.io: https://goo.gl/vNRvKt */}
 
 Följande uppgifter skall utföras och resultatet skall redovisas.
 
-1. Gör uppgiften "[Node.js terminalprogram mot MySQL med kommandoloop](uppgift/nodejs-terminalprogram-mot-mysql-med-kommandoloop)". Spara alla filer i `me/kmom03/terminal2`.
+1. ⚠️ Uppgift med CSharp mot classic models.
 
-1. Fortsätt jobba igenom nästa del av guiden "[Kom igång med SQL i MySQL](guide/kom-igang-med-sql-i-mysql-v2)". Spara filerna i katalogen `me/skolan` som din redovisning. Detta är sista delen av guiden som vi kommer jobba med.
-    * [Delen: Koppla tabeller](guide/kom-igang-med-sql-i-mysql-v2/koppla-tabeller)
-
-1. Gör uppgiften "[Skapa ER-modell för en databas (konceptuell)](uppgift/skapa-er-modell-for-en-databas-konceptuell)". Visa att du kan jobba enligt en metod för att skapa en databasmodell och redovisa i ett dokument. Detta är första delen av uppgiften som slutförs i kommande kursmoment. Spara allt du gör i `me/kmom03/er1`.
+1. ⚠️ Uppgift med ER-modellering (konceptuell).
 
 
 
@@ -119,3 +136,48 @@ Se till att följande frågor besvaras i din redovisningstext i din rapportsida.
 * Fanns det några extra svårigheter/utmaningar du kämpade med i kursmomentet?
 
 * Vilken är din TIL för detta kmom?
+
+
+
+## Kommentarer & Noteringar
+
+<details>
+<summary>Plan för veckans genomgångar</summary>
+
+Följande är en plan för hur lärarteamet _kan_ lägga upp genomgångarna under veckan för detta kursmoment.
+
+
+
+### Måndag
+
+Första timmen:
+
+* Vi fortsätter jobba med databasen "world" och gör en tripple join samt ett antal rapporter.
+* [World database and SQL: Get going](https://gitlab.com/mikael-roos/database/-/tree/main/sql/world/get-going) (jobba igenom sista delen).
+
+Andra timmen:
+
+* [World database and SQL: Aggregate and builtin functions](https://gitlab.com/mikael-roos/database/-/tree/main/sql/world/aggregate)
+
+
+
+# Onsdag
+
+Första timmen:
+
+* Övning med ER och konceptuell modellering
+* Kokboken 10 steg
+
+Andra timmen:
+
+* Stöd för uppgiften med ER-modellering (konceptuell)
+
+
+# Torsdag
+
+* Labbmiljön med CSharp på plats
+* Övningen med terminalprogram i CSharp klar
+* Övningen med classicalmodels klar
+* Uppgiften med terminalprogram i CSharp påbörjad
+
+</details>
