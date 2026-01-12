@@ -1,5 +1,5 @@
 ---
-title: "⚠️ Databasen World (kmom01)" 
+title: "⚠️ Uppgift: Databasen World (kmom01)" 
 description: "Uppgift att använda en databas och ställa frågor mot den."
 revision:
     "2026-01-09": "(A) Första versionen."
@@ -17,9 +17,9 @@ Denna uppgift görs som en del av kmom01.
 
 ## Förutsättning
 
-Du behöver ha tillgång till ditt kursrepo.
+Du har tillgång till ditt kursrepo.
 
-Du behöver ha jobbat igenom övningen med "Databasen World".
+Du behöver ha jobbat igenom "Övning med databasen World och SELECT".
 
 
 
@@ -35,6 +35,13 @@ Utför följande krav.
 
 1. 
 
+<!--
+Visa rapport i terminalklienten.
+
+Visa rapport i workbench (eller motsvarande)
+
+
+-->
 
 
 <!--

@@ -19,13 +19,15 @@ Kursmomentet är ännu ej släppt då det saknas delar av innehållet.
 Du kan dock läsa igenom det som finns publicerat och förbereda dig inför kursmomentet.
 :::
 
-Vi börjar med att installera en labbmiljö som består av en databas och ett par databas-klienter. Vi skall jobba med databasen MariaDB som är en relationsdatabas. Som klienter använder vi en terminalbaserad klient och en fönsterbaserad grafisk klient. Klienterna har båda sin plats i vår verktygslåda och de är bra att använda vid olika typer av tillfällen.
+Vi skall jobba med databasen MariaDB som är en relationsdatabas. Som klienter använder vi en terminalbaserad klient och en fönsterbaserad grafisk klient. Klienterna har båda sin plats i vår verktygslåda och de är bra att använda vid olika typer av tillfällen.
 
 I kursen använder vi MariaDB som databas. MariaDB är en "fork" av MySQL och i praktiken är de väldigt lika varandra. MySQL är mer kommersiellt medan MariaDB är mer community-drivet. För kursens syften kan vi betrakta dem som likvärdiga.
 
 I en relationsdatabas pratar vi SQL med databasen. SQL är ett deklarativt frågespråk för relationsdatabaser men det finns också inslag av imperativ programmering likt ett "vanligt" programmeringssprål.
 
 I inledningen skriver vi SQL för att skapa tabeller och för att lägga till, uppdatera, visa och radera data från databasen. När databasserver och klienterna är på plats så kikar vi på en del grundkonstruktioner för SQL.
+
+Vi börjar med att använda en befintlig databas som heter "world" som innehåller data om världens länder, städer och kontinenter. Vi skapar SQL-frågor mot databasen för att hämta ut information ur den.
 
 
 
@@ -69,7 +71,9 @@ Läs följande:
 Kika igenom följande artiklar.
 
 1. Kika igenom referensmanualen för MariaDB, kort och översiktligt så att du kan navigera i den. Referensmanualen är ett viktigt verktyg för att bli bra på databaser och SQL. Se till att du kan hitta till den delen som visar hur SQL med SELECT skall skrivas i MySQL.
-    * [MariaDB Server Documentation](https://mariadb.com/kb/en/documentation/)
+
+    * [MariaDB Server Documentation](https://mariadb.com/docs/)
+    * [MySQL documentation](https://dev.mysql.com/doc/) (om du har tid och lust)
 
 1. Under kursen kommer vi att ponera vikten av att hålla sig till en kodstil för SQL-koden. Det kommer inte vara absolut strikt, men det är en rimlig rekommendation att följa en kodstil. För kursen har vi valt "[SQL Style Guide by Simon Holywell](https://www.sqlstyle.guide/)". Ha detta i bakhuvudet när du funderar på hur man skriver sin SQL-kod. Om du har funderingar kring kodstilen så kan du läsa "[SQL style guide misconceptions](https://www.simonholywell.com/post/2016/12/sql-style-guide-misconceptions/)".
 
@@ -114,7 +118,7 @@ Glöm inte att vara kritisk till informationen du får, precis som man vanligen 
 
 Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
-1. ⚠️ Jobba igenom övningen [Databasen World](/website/laromaterial/ovning/databasen-world/). Övningen går igenom hur du kan använda en befintlig databas (world) och skapa SQL-frågor mot den med både terminalklienten och desktopklienten.
+1. ⚠️ Jobba igenom övningen [Övning med databasen World och SELECT](/website/laromaterial/ovning/world-database-with-select/). Övningen går igenom hur du kan använda en befintlig databas (world) och skapa SQL-frågor mot den med både terminalklienten och desktopklienten.
 
 
 
