@@ -37,8 +37,7 @@ IDENTIFIED BY 'P@ssw0rd';
 Kör följande sats för att ge användaren fullständiga rättigheter på alla databaser och alla tabeller `*.*`, det blir i princip samma rättigheter som en root-användare som har tillgång till allt.
 
 ```sql
-GRANT ALL PRIVILEGES
-ON *.* TO 'dbadm'@'%'
+GRANT ALL PRIVILEGES ON *.* TO 'dbadm'@'%'
 WITH GRANT OPTION;
 ```
 
