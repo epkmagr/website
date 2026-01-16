@@ -27,31 +27,34 @@ Nu är du redo att skriva SQL-satser för att skapa användaren.
 
 ## Skapa användaren "dbadm"
 
-Kör följande SQL-sats, i terminalklienten, för att skapa din användare och ge den tillåtelse att koppla sig mot databasservern oavsett vilken maskin klienten finns på `@'%'`.
+Kör följande SQL-satser, i terminalklienten, för att skapa din användare och ge den tillåtelse att koppla sig mot databasservern från localhost `@'localhost'` och oavsett vilken maskin klienten finns på `@'%'`.
 
 ```sql
-CREATE USER 'dbadm'@'%'
-IDENTIFIED BY 'P@ssw0rd';
+CREATE USER 'dbadm'@'%'         IDENTIFIED BY 'P@ssw0rd';
+CREATE USER 'dbadm'@'localhost' IDENTIFIED BY 'P@ssw0rd';
 ```
 
 Kör följande sats för att ge användaren fullständiga rättigheter på alla databaser och alla tabeller `*.*`, det blir i princip samma rättigheter som en root-användare som har tillgång till allt.
 
 ```sql
-GRANT ALL PRIVILEGES ON *.* TO 'dbadm'@'%'
-WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'dbadm'@'%'         WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'dbadm'@'localhost' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
 ```
 
 Om något går fel kan du ta bort användaren med kommandot DROP och sedan börja om igen.
 
 ```sql
 DROP USER IF EXISTS 'dbadm'@'%';
+DROP USER IF EXISTS 'dbadm'@'localhost';
 ```
 
 
 
 ## Använd den nya användaren
 
-Prova nu om du kan logga in med din nya användare. Avsluta din nuvarande databaskoppling (skriv "exit") och öppna en ny så här.
+Prova nu om du kan logga in med din nya användare. Avsluta din nuvarande databaskoppling (skriv "exit") och öppna en ny så här. Själva lösenorder är alltså `P@ssword`, stort P, med ett 2-tecken och med en nolla 0.
 
 ```sql
 mariadb -udbadm -pP@ssw0rd
