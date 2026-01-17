@@ -22,6 +22,6 @@ I denna guiden får du hjälp med:
 
 1. Skapa en katalogstruktur där du kan jobba med kursens material.
 
-1. Hitta och klona ett befintligt Git repo där du sparar allt ditt material i kursen.
+1. Hitta och klona ditt för-skapade Git repo (kursrepo) där du sparar allt ditt material i kursen.
 
-I kursen kommer vi att referera till dit git repo som ditt "kursrepo".
+I kursen kommer vi att referera till ditt git repo som ditt "kursrepo".

@@ -27,4 +27,45 @@ Leta reda på ett repo som heter `databas-xxxxxx` där `xxxxxx` är ditt student
 
 Det är bara du själv och lärarna i kursen som har tillgång till repot.
 
-Börja med att klona ditt repo, gör en mindre ändring i README-filen och pusha upp ändringen till GitHub för att verifiera att du har tillgång till repo.
+Börja med att klona ditt repo till din lokala dator.
+
+```bash title="Klona ett kursrepo"
+# Gå till katalogen för dbwebb-kurser
+
+# Klona repot via ssh, byt ut xxx mot din studentakronym
+git clone git@github.com:bth-databas/databas-xxx.git
+```
+
+Nu kan du flytta in i katalogen för ditt repo, tex så här.
+
+```bash title="Flytta in till kursrepot"
+# Flytta in i kursrepot, byt ut xxx mot din studentakronym
+cd databas-xxx
+
+# Titta vilka filer som finns i repot
+ls -la
+tree .
+```
+
+Öppna upp repot i vscode.
+
+```bash title="Öppna repot i vscode"
+# Öppna nuvarande katalog i vscode
+code .
+```
+
+Gör en mindre ändring i README-filen och pusha upp ändringen till GitHub för att verifiera att du har tillgång till repo.
+
+```bash title="Gör commit på din ändring"
+# Efter att du har redigerat din README.md
+git status
+
+git commit -a -m "Verify I have read/write access to the repo"
+git push
+
+git status
+```
+
+Kontroller att filen ändrades på GitHub.
+
+Nu har du kontroll på ditt eget kursrepo och kan börja att jobba.

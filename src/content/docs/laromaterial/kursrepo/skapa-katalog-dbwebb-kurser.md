@@ -10,6 +10,12 @@ sidebar:
 
 Börja med att skapa en katalog i ditt filsystem som heter `dbwebb-kurser`. Tanken är att du kan spara allt ditt kursmaterial, från alla kurser, under denna katalog.
 
+Om du redan har denna katalogen skapad så kan du hoppa över denna delen och gå vidare till nästa artikel.
+
+
+
+## Skapa katalogen dbwebb-kurser
+
 För att skapa katalogen så öppnar du din terminal och går till din hemmakatalog, därefter skapar du katalogen.
 
 ```bash title="Skapa katalogen dbwebb-kurser under din hemmakatalog"
