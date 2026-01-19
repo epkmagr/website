@@ -66,7 +66,7 @@ Prova även att öppna den så här genom att skriva in lösenordet direkt i ter
 mariadb -udbadm -p
 ```
 
-Du kan kontrollera att du nu är inloggad som din "dbadm@%" användare.
+Du kan kontrollera att du nu är inloggad som din "dbadm" användare.
 
 ```text
 MariaDB [(none)]> SELECT CURRENT_USER();
@@ -76,6 +76,8 @@ MariaDB [(none)]> SELECT CURRENT_USER();
 | dbadm@%         |
 +-----------------+
 ```
+
+Den kan stå antingen `dbadm@%` ovan, eller `dbadm@localhost`, beroende av hur din databasserver beteer sig. Båda varianterna är rätt och det viktiga är att du kan logga in som användaren `dbadm.`
 
 Du kan också kontrollera vilka rättigheter din användare har med kommandot `SHOW GRANTS;`.
 
