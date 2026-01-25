@@ -1,8 +1,8 @@
 ---
-title: "⚠️ Kmom02: SQL JOIN"
-description: XXX.
+title: "Kmom02: SQL JOIN"
+description: Mer SQL med fokus på JOIN och aggregerande funktioner och vi fortsätter med grunder i ER-modellering.
 revision:
-  2026-01-01: (A, mos) Första versionen. 
+  2026-01-23: (A, mos) Första versionen. 
 ---
 
 import Figure from '@components/CustomFigure.astro';
@@ -10,21 +10,9 @@ import YouTube from '@components/YouTube.astro';
 
 {/* TODO
 *
-*
-
-TILL KOMMANDE KMOM:
-
-* Serietabeller
-* Användare inloggning, koppling avatar till user
-* Account och flytta mellan konton med transaktioner
-* Order, lagerhantering, fakturering
 */}
 
-:::danger
-Kursmomentet är ännu ej redigerat, informationen är inte korrekt.
-:::
-
-Vi jobbar vidare med SQL och tränar på fler konstruktionerna såsom vyer, UNION och JOIN.
+Vi jobbar vidare med SQL och tränar på att göra JOIN av flera tabeller och skriva rapporter som aggregerar värden i tabellen. Vi tittar också på begreppet vyer.
 
 Vi börjar titta på hur man modellerar databaser med ER-diagram.
 
@@ -51,7 +39,7 @@ Läs följande:
 1. [Databasteknik](kunskap/boken-databasteknik) om mer SQL.
     * Kap 8: Mer om SQL: Aggregatfunktioner, null-värden, yttre join (hoppa över  delen om yttre join)
 
-Det finns ytterligare ett kapitel i boken som är relaterat till bakgrunden av SQL, det går utanför kursens ram men läs vid intresse.
+Det finns ytterligare ett kapitel i boken som är relaterat till bakgrunden av SQL, det går utanför kursens ram så läs endast vid intresse.
 
 1. [Databasteknik](kunskap/boken-databasteknik)
     * Kap 11: Relationsalgebra
@@ -74,9 +62,14 @@ Här finns ett antal instuderingsfrågor som hjälper dig att finna information 
 <details>
 <summary>Instuderingsfrågor</summary>
 
-1. 
+1. Berätta kort om konceptet JOIN i relationsdatabaser och SELECT.
+1. Vad innebär en CROSS JOIN?
+1. Vad innebär en INNER JOIN?
+1. Vilken typ av aggregerande funktioner finns i SQL, visa några exempel.
+1. Förklara skillnaden mellan WHERE och HAVING.
+1. Förklara begreppet VYER i SQL och när kan det vara användbart?
 
-Här är en [utskrift av när en frågesession genomförts](https://chatgpt.com/share/68bafa23-4b84-8005-a745-451d43258c9a). Dina svar kan skifta från de som visas. Var alltid kritisk till dina källor.
+Här är en [utskrift av när en frågesession genomförts](https://chatgpt.com/share/69738697-53dc-8005-b142-c8aaae2cecc1). Dina svar kan skifta från de som visas. Var alltid kritisk till dina källor.
 
 </details>
 
@@ -92,22 +85,12 @@ Här är en [utskrift av när en frågesession genomförts](https://chatgpt.com/
 
 Jobba igenom övningarna, de förbereder dig inför uppgifterna.
 
-1. ⚠️ Övning med databasen World: Aggregerande funktioner.
+1. Jobba igenom övningen "[Övning databasen World: JOIN och rapporter](/website/laromaterial/ovning/world-database-join/)". Övningen jobbar vidare med databasen world och går igenom hur man slår ihop flera tabeller till en rapport med JOIN.
 
-1. ⚠️ Övning med databasen World: Tripple Join.
-
+1. Jobba igenom övningen "[Övning databasen World: Aggregerande funktioner och vyer](/website/laromaterial/ovning/world-database-aggregation/)". Övningen jobbar vidare med databasen world och går igenom nya koncept som aggregerande funktioner och vyer.
 
 {/*
-1. ⚠️ CSharp och MariaDB.
-
 1. Verktyg för att modellera?
-
-Skapa en egen databas och lek runt
--------------------------
-
-Vi leker runt och gör CREATE DATABASE/TABLE, SELECT, INSERT, UPDATE, DELETE, DROP.
-
-* [Get going with a database and SQL](https://gitlab.com/mikael-roos/database/-/tree/main/sql/ladok)
 
 */}
 
@@ -117,7 +100,7 @@ Vi leker runt och gör CREATE DATABASE/TABLE, SELECT, INSERT, UPDATE, DELETE, DR
 
 Följande uppgifter skall utföras och resultatet skall redovisas.
 
-1. ⚠️ Uppgift med databasen World och rapporter.
+1. Genomför uppgiften "[Databasen World: JOIN](/website/laromaterial/uppgift/kmom02-join/)".
 
 
 
@@ -128,10 +111,8 @@ Läs [instruktionen om hur du skall redovisa](/website/laromaterial/instruktion/
 Se till att följande frågor besvaras i din redovisningstext i din rapportsida.
 
 * Jämför SQL med andra sätt att programmera, relatera till några av de programmeringsspråk du kan.
-* Du har nu använt både UNION och JOIN för att slå samman tabeller i SQL, vilken är din uppfattning om databaser och SQL så här långt?
-* Är detta den första bekantskap med JavaScript på serversidan och Node.js, hur känns det och vilken uppfattning, eller förutfattade meningar, har du om detta?
-* Hur kändes konceptet med async och await och asynkron programmering?
-* Hur gick det att koppla ihop JavaScript, Node.js med SQL och databasen?
+* Förklara för någon som inte kan databaser, vad JOIN gör och hur det fungerar.
+* Hur gick det att genomföra övningar och uppgifterna, berätta gärna vad som var enkelt och vad som var mer utmanande att hantera?
 
 * Vilken är din TIL för detta kmom?
 
@@ -150,12 +131,11 @@ Följande är en plan för hur lärarteamet _kan_ lägga upp genomgångarna unde
 
 Första timmen:
 
-* Vi fortsätter jobba med databasen "world" och gör en tripple join samt ett antal rapporter.
-* [World database and SQL: Get going](https://gitlab.com/mikael-roos/database/-/tree/main/sql/world/get-going) (jobba igenom sista delen).
+* Prata om JOIN och bygg upp en trippel JOIN från grunden med databasen World.
 
 Andra timmen:
 
-* [World database and SQL: Aggregate and builtin functions](https://gitlab.com/mikael-roos/database/-/tree/main/sql/world/aggregate)
+* Träna på aggregerande funktioner med databasen World.
 
 
 
@@ -175,8 +155,8 @@ Andra timmen:
 
 ### Torsdag
 
-* Övning "tripple join" med databasen World klar
-* Övning "aggregate & builtin functions" med databasen World klar
-* Andra uppgiften med databasen world påbörjad
+* Övning "join" med databasen World klar
+* Övning "aggregate" med databasen World klar
+* Veckans uppgift med databasen world påbörjad
 
 </details>
