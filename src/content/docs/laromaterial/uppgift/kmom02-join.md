@@ -2,6 +2,7 @@
 title: "Uppgift: JOIN (kmom02)" 
 description: "Uppgift att använda en databas och ställa frågor mot den."
 revision:
+    "2026-01-26": "(B) Uppdaterade utskrifter av förväntat resultat."
     "2026-01-25": "(A) Första versionen."
 sidebar:
     order: 0020
@@ -116,33 +117,67 @@ Vilka länder har inget independentyYear?
     <details><summary>Resultat</summary>
 
     ```text
-    +-------------------------------+---------------+
-    | Styrelseskick                 | Antal länder  |
-    +-------------------------------+---------------+
-    | Republic                      |           122 |
-    | Constitutional Monarchy       |            29 |
-    | Federal Republic              |            15 |
-    | Dependent Territory of the UK |            12 |
-    | Monarchy                      |             5 |
-    +-------------------------------+---------------+
+    +--------------+---------------------+
+    | country_name | number_of_languages |
+    +--------------+---------------------+
+    | South Africa |                   4 |
+    | Switzerland  |                   4 |
+    | Luxembourg   |                   3 |
+    | Peru         |                   3 |
+    | Singapore    |                   3 |
+    +--------------+---------------------+
     ```
 
     </details>
 
-1. Joina alla tre tabellerna.
+
+
+1. Visa en lista med de städer som har störst befolkning i världen. Visa stadens namn, landets namn, och stadens befolkning. Begränsa resultatet till 10 rader.
 
     <details><summary>Resultat</summary>
 
     ```text
-    +-------------------------------+---------------+
-    | Styrelseskick                 | Antal länder  |
-    +-------------------------------+---------------+
-    | Republic                      |           122 |
-    | Constitutional Monarchy       |            29 |
-    | Federal Republic              |            15 |
-    | Dependent Territory of the UK |            12 |
-    | Monarchy                      |             5 |
-    +-------------------------------+---------------+
+    +-------------------+--------------------+-----------------+
+    | city_name         | country_name       | city_population |
+    +-------------------+--------------------+-----------------+
+    | Mumbai (Bombay)   | India              |        10500000 |
+    | Seoul             | South Korea        |         9981619 |
+    | São Paulo         | Brazil             |         9968485 |
+    | Shanghai          | China              |         9696300 |
+    | Jakarta           | Indonesia          |         9604900 |
+    | Karachi           | Pakistan           |         9269265 |
+    | Istanbul          | Turkey             |         8787958 |
+    | Ciudad de México  | Mexico             |         8591309 |
+    | Moscow            | Russian Federation |         8389200 |
+    | New York          | United States      |         8008278 |
+    +-------------------+--------------------+-----------------+
+    ```
+
+    </details>
+
+
+
+1. Använd rapporten ovan men visa hur många som bor i snitt i dessa städer.
+
+    <details><summary>Resultat</summary>
+
+    ```text
+    +--------------------+
+    | average_population |
+    +--------------------+
+    |       9279731.4000 |
+    +--------------------+
+    ```
+
+    </details>
+
+    <details><summary>Ledtråd</summary>
+
+    Att göra den frågan på ett dynamiskt sätt har vi ännu inte lärt oss, då får vi ta och hårdkoda lösningen. Alla vägar är tillåtna?
+
+    ```sql
+    WHERE 
+        ci.population >= 8008278
     ```
 
     </details>
